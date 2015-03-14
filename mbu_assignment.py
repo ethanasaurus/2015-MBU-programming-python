@@ -18,11 +18,10 @@
 #          * Use some mathematical tricks to determine if the number is odd or even.
 #                Hint -- what unique property do even numbers have?
 #          
-# What happens if you enter a value that is not a number?
 #
 
 import sys
-import string
+
 
 def main():
 
@@ -34,8 +33,21 @@ def main():
 
     #This is for loop. We take each element from sys.argv and print it to the consile.
     for i in sys.argv[1:]:
+        
+        i = int(i)
         print str(i)
         print "\n"
 
+        if i%2==0:
+            
+            print "even"
+        
+        if i%2==1:
+            
+            print "odd"
+            
+        
+
 if __name__ == '__main__':
     main()
+    
